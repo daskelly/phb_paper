@@ -4,6 +4,8 @@ This repository contains an example pipeline showing how to
 implement private haplotype barcoding, as described in
 Skelly et al. 2017 (URL).
 
+#### Pipeline
+
 The overall steps of the pipeline are:
 
 * Create a *pool* genome consisting of all chromosomes of the
@@ -24,7 +26,7 @@ The overall steps of the pipeline are:
 * (If desired) call recombination breakpoints in the genomes of individual
  offspring.
 
-Requirements:
+#### Requirements
 
 * bedtools http://bedtools.readthedocs.io/en/latest/. We used version 2.25.0.
 * bwa http://bio-bwa.sourceforge.net/. We used v0.7.12.
@@ -34,12 +36,14 @@ Requirements:
  coordinates, you will a tool like liftOver https://genome.ucsc.edu/util.html
  or CrossMap http://crossmap.sourceforge.net/.
 
-Notes:
+#### Notes
 
 * The code here is one example of how this analysis could be carried
  out.
 * If you are attempting to carry out this pipeline, set the environment
  variable $PICARD_DIR to the directory where Picard jarfiles are located.
+
+#### example
 
 An example of using this pipeline:
 
