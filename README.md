@@ -2,7 +2,7 @@
 
 This repository contains an example pipeline showing how to
 implement private haplotype barcoding, as described in
-Skelly et al. 2017 (URL).
+Skelly et al. 2017 https://doi.org/10.1101/116582.
 The data generated in the paper is available through NCBI's
 Short Read Archive at
 https://trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?study=SRP101897.
