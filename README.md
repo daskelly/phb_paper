@@ -58,7 +58,7 @@ An example of using this pipeline:
 
 ```bash
 # Starting with individual genomes ref.fa ind1.fa ind2.fa ... indN.fa
-cat *.fa > pool_genome.fa
+python combineGenomes.fa ref.fa ind*.fa > pool_genome.fa
 python phb_mapping_workflow.py reads_1.fastq reads_2.fastq pool_genome.fa
 # creates reads.bam
 python tile_across_genome.py --windowSize 7500 pool_genome.fa > windows.bed
