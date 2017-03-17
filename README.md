@@ -35,6 +35,7 @@ The overall steps of the pipeline are:
 * bwa http://bio-bwa.sourceforge.net/. We used v0.7.12.
 * Picard https://broadinstitute.github.io/picard/. We used version 1.101.
 * samtools https://github.com/samtools/samtools. We used v0.1.19.
+* hmmlearn python package. We used version 0.2.0.
 * If you would like to convert strain-level breakpoints to reference
  coordinates, you will a tool like liftOver https://genome.ucsc.edu/util.html
  or CrossMap http://crossmap.sourceforge.net/.
