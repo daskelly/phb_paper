@@ -35,7 +35,11 @@ The overall steps of the pipeline are:
 * bwa http://bio-bwa.sourceforge.net/. We used v0.7.12.
 * Picard https://broadinstitute.github.io/picard/. We used version 1.101.
 * samtools https://github.com/samtools/samtools. We used v0.1.19.
-* hmmlearn python package. We used version 0.2.0.
+* python packages:
+  * hmmlearn. We used version 0.2.0.
+  * numpy. We used version 1.10.4.
+  * pandas. We used version 0.19.2.
+  * scipy. We used version 0.17.0.
 * If you would like to convert strain-level breakpoints to reference
  coordinates, you will a tool like liftOver https://genome.ucsc.edu/util.html
  or CrossMap http://crossmap.sourceforge.net/.
@@ -46,6 +50,7 @@ The overall steps of the pipeline are:
  out.
 * If you are attempting to carry out this pipeline, set the environment
  variable $PICARD_DIR to the directory where Picard jarfiles are located.
+* Chromosomes in the pooled genome should be named *strain*.*chrom*.
 
 ### Example
 
