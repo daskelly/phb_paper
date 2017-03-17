@@ -51,6 +51,7 @@ The overall steps of the pipeline are:
 * If you are attempting to carry out this pipeline, set the environment
  variable $PICARD_DIR to the directory where Picard jarfiles are located.
 * Chromosomes in the pooled genome should be named *strain*.*chrom*.
+(This is done in the script `combineGenomes.fa` below).
 
 ### Example
 
