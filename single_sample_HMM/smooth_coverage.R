@@ -4,7 +4,7 @@ library(mmand)
 library(assertthat)
 
 # Given a file of read coverage, smooth it before
-# calling the no tetrad info HMM.
+# calling the single sample HMM.
 # Must specify a two args (the coverage file and out file)
 if (!exists("argv")) argv <- commandArgs(trailingOnly=TRUE)
 assert_that(length(argv) == 2)
