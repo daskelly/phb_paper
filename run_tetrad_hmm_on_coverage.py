@@ -225,7 +225,7 @@ def getArgs():
     parser.add_argument("--anomalous_runlen", default=2, type=int, \
         help="Do not filter out anomalously thresholded sites " + \
         "if there are more than this number consecutively occurring." + \
-        " (useful to set high if there is LOH data)")
+        " (useful to set high if there is LOH data)", metavar='N')
     parser.add_argument("--anomalous_threshold", default=0.15, type=float, \
         help="Number of reads or min fraction of reads present in >=3" + \
         " spores above which the window should be filtered out", metavar="N")
