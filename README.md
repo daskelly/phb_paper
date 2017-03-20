@@ -57,12 +57,14 @@ The overall steps of the pipeline are:
 * If you are attempting to carry out this pipeline, set the environment
  variable $PICARD_DIR to the directory where Picard jarfiles are located.
 * Chromosomes in the pooled genome should be named *strain*.*chrom*.
-(This is done in the script `combineGenomes.fa` below).
+(This is done in the script `combineGenomes.fa` below, or you may do it
+  yourself).
 
 ### Example
 
 An example of using this pipeline:
 
+(1) Prepare genomes and genomic windows
 ```bash
 # Starting with individual genomes ref.fa ind1.fa ind2.fa ... indN.fa
 python combineGenomes.fa ref.fa ind*.fa > pool_genome.fa
@@ -77,7 +79,7 @@ do
 done
 ```
 
-Using the single-sample HMM:
+(2a) Run the single-sample HMM:
 ```bash
 DIR=single_sample_HMM
 for STRAIN in $(awk -F. '{ print $1; }' windows.bed | sort | uniq)
@@ -102,7 +104,7 @@ do
 done
 ```
 
-Using the HMM that incorporates tetrad information:
+(2b) Running the HMM that incorporates tetrad information:
 ```bash
 # Let's say we have the four spores from a tetrad in each of pools A, B, C, and D
 for STRAIN in $(awk -F. '{ print $1; }' windows.bed | sort | uniq)
