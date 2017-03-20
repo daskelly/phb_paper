@@ -62,7 +62,7 @@ The overall steps of the pipeline are:
 
 ### Example
 
-An example of using this pipeline:
+An example of using this pipeline. The code below could be run in bash:
 
 (1) Prepare genomes and genomic windows
 ```bash
